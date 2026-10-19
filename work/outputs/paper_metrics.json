@@ -1,0 +1,162 @@
+{
+  "provenance": "Extracted from saved executed notebook outputs; not a new model run",
+  "comparison": [
+    {
+      "stage": "Before: original split",
+      "method": "Week 4 baseline",
+      "items": "246",
+      "base_rate": "0.6911",
+      "precision_at_10": "1.0",
+      "precision_at_20": "1.00",
+      "average_precision": "0.8399",
+      "roc_auc": "0.7321"
+    },
+    {
+      "stage": "Before: original split",
+      "method": "Logistic regression",
+      "items": "246",
+      "base_rate": "0.6911",
+      "precision_at_10": "1.0",
+      "precision_at_20": "0.95",
+      "average_precision": "0.8648",
+      "roc_auc": "0.7711"
+    },
+    {
+      "stage": "After: pooled out-of-fold",
+      "method": "Week 4 baseline",
+      "items": "6531",
+      "base_rate": "0.6567",
+      "precision_at_10": "1.0",
+      "precision_at_20": "1.00",
+      "average_precision": "0.8566",
+      "roc_auc": "0.7840"
+    },
+    {
+      "stage": "After: pooled out-of-fold",
+      "method": "Logistic regression",
+      "items": "6531",
+      "base_rate": "0.6567",
+      "precision_at_10": "1.0",
+      "precision_at_20": "1.00",
+      "average_precision": "0.8025",
+      "roc_auc": "0.6787"
+    }
+  ],
+  "folds": [
+    {
+      "stage": "Fold 1",
+      "method": "Week 4 baseline",
+      "items": "4273",
+      "base_rate": "0.6293",
+      "precision_at_10": "1.0",
+      "precision_at_20": "0.95",
+      "average_precision": "0.8500",
+      "roc_auc": "0.7985",
+      "test_clients": "1"
+    },
+    {
+      "stage": "Fold 1",
+      "method": "Logistic regression",
+      "items": "4273",
+      "base_rate": "0.6293",
+      "precision_at_10": "1.0",
+      "precision_at_20": "1.00",
+      "average_precision": "0.8431",
+      "roc_auc": "0.7669",
+      "test_clients": "1"
+    },
+    {
+      "stage": "Fold 2",
+      "method": "Week 4 baseline",
+      "items": "647",
+      "base_rate": "0.8068",
+      "precision_at_10": "1.0",
+      "precision_at_20": "1.00",
+      "average_precision": "0.9232",
+      "roc_auc": "0.7964",
+      "test_clients": "1"
+    },
+    {
+      "stage": "Fold 2",
+      "method": "Logistic regression",
+      "items": "647",
+      "base_rate": "0.8068",
+      "precision_at_10": "1.0",
+      "precision_at_20": "1.00",
+      "average_precision": "0.9180",
+      "roc_auc": "0.7522",
+      "test_clients": "1"
+    },
+    {
+      "stage": "Fold 3",
+      "method": "Week 4 baseline",
+      "items": "634",
+      "base_rate": "0.6278",
+      "precision_at_10": "1.0",
+      "precision_at_20": "1.00",
+      "average_precision": "0.8155",
+      "roc_auc": "0.7488",
+      "test_clients": "1"
+    },
+    {
+      "stage": "Fold 3",
+      "method": "Logistic regression",
+      "items": "634",
+      "base_rate": "0.6278",
+      "precision_at_10": "1.0",
+      "precision_at_20": "0.95",
+      "average_precision": "0.8441",
+      "roc_auc": "0.7803",
+      "test_clients": "1"
+    },
+    {
+      "stage": "Fold 4",
+      "method": "Week 4 baseline",
+      "items": "489",
+      "base_rate": "0.6564",
+      "precision_at_10": "1.0",
+      "precision_at_20": "1.00",
+      "average_precision": "0.8422",
+      "roc_auc": "0.7638",
+      "test_clients": "6"
+    },
+    {
+      "stage": "Fold 4",
+      "method": "Logistic regression",
+      "items": "489",
+      "base_rate": "0.6564",
+      "precision_at_10": "1.0",
+      "precision_at_20": "1.00",
+      "average_precision": "0.8480",
+      "roc_auc": "0.7597",
+      "test_clients": "6"
+    },
+    {
+      "stage": "Fold 5",
+      "method": "Week 4 baseline",
+      "items": "488",
+      "base_rate": "0.7357",
+      "precision_at_10": "1.0",
+      "precision_at_20": "1.00",
+      "average_precision": "0.8772",
+      "roc_auc": "0.7545",
+      "test_clients": "12"
+    },
+    {
+      "stage": "Fold 5",
+      "method": "Logistic regression",
+      "items": "488",
+      "base_rate": "0.7357",
+      "precision_at_10": "1.0",
+      "precision_at_20": "0.95",
+      "average_precision": "0.8907",
+      "roc_auc": "0.7763",
+      "test_clients": "12"
+    }
+  ],
+  "source_sha256": {
+    "work/notebooks/w05_model.ipynb": "b96cd9f2f23c9e6f156a2715fd2555f29e53c0415a756b3a38a19c98f8d3888c",
+    "work/notebooks/w06_validation_audit.ipynb": "f898516931d475099dc88095d9e7d2ba16d96e4c1445937889ffb6ed397ac5eb",
+    "work/notebooks/w07_action_playbook.ipynb": "5133e3da88dcbe0d95439991ed6dc55e142476ade4d8a58fa67503a786bf7572"
+  }
+}
