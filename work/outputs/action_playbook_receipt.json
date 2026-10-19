@@ -1,0 +1,55 @@
+{
+  "assignment": "ML-10",
+  "created_at_utc": "2026-10-19T14:52:28.348957+00:00",
+  "dataset": "FlyRank/internship-warehouse",
+  "source_partition": "2026-03",
+  "input_window": [
+    "2026-03-01",
+    "2026-03-20"
+  ],
+  "use": "Historical decision-support demonstration",
+  "selected_method": "Week 4 peer-gap baseline",
+  "score_formula": "impressions * max(peer_median_ctr - ctr, 0)",
+  "minimum_observed_days": 10,
+  "availability": "GSC and GA4 both TRUE",
+  "minimum_impressions_for_scoring": 100,
+  "minimum_peer_items": 20,
+  "position_edges": [
+    0,
+    3,
+    10,
+    20,
+    "infinity"
+  ],
+  "volume_groups": [
+    "100-499",
+    "500-1999",
+    "2000+"
+  ],
+  "queue_items": 6607,
+  "positive_score_items": 3280,
+  "action_counts": {
+    "MONITOR": 3285,
+    "REVIEW_SEARCH_APPEARANCE_AND_INTENT": 3280,
+    "COLLECT_MORE_DATA": 42
+  },
+  "actual_page_reviews_completed": 0,
+  "implemented_changes": 0,
+  "human_review_precision": null,
+  "update_benefit": null,
+  "pilot_assumptions": {
+    "batch_size": 10,
+    "triage_minutes_per_item": 15,
+    "target_actionable_items_per_batch": 7,
+    "low_yield_batches_before_review": 2,
+    "relative_eligible_count_alert": 0.2
+  },
+  "validation_sources": [
+    "work/notebooks/w05_model.ipynb",
+    "work/notebooks/w06_validation_audit.ipynb"
+  ],
+  "new_validation_metrics_computed": false,
+  "queue_csv": "work/outputs/content_action_queue.csv",
+  "automatic_content_changes_allowed": false,
+  "june_data_used": false
+}
