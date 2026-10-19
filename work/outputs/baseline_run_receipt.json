@@ -1,0 +1,37 @@
+{
+  "assignment": "ML-07",
+  "created_at_utc": "2026-10-19T12:50:16.383871+00:00",
+  "dataset": "FlyRank/internship-warehouse",
+  "input_window": [
+    "2026-03-01",
+    "2026-03-20"
+  ],
+  "availability": "GSC and GA4 flags both TRUE",
+  "minimum_observed_days": 10,
+  "minimum_impressions": 100,
+  "minimum_peer_items": 20,
+  "position_edges": [
+    0,
+    3,
+    10,
+    20,
+    "infinity"
+  ],
+  "volume_groups": [
+    "100-499",
+    "500-1999",
+    "2000+"
+  ],
+  "score_formula": "impressions * max(peer_median_ctr - ctr, 0)",
+  "signal_1_verdict": "CONFIRMED",
+  "signal_2_verdict": "OPPOSITE",
+  "queue_items": 6607,
+  "positive_score_items": 3280,
+  "top_k_reviewed": 10,
+  "human_review_precision_at_10": null,
+  "human_review_label_base_rate": null,
+  "evaluation_status": "Independent review labels unavailable",
+  "csv_path": "work/outputs/baseline_action_score.csv",
+  "later_outcomes_used_in_score": false,
+  "product_flags_used_in_score": false
+}
